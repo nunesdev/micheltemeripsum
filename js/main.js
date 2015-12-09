@@ -7,7 +7,7 @@ var mtl = (function (Main) {
 	}
 
 	Main.current_lang = '.paragraphs_ptbr';
-	Main.number = 3;
+	Main.number = 2;
 
 	Main.init = function(){
 		number_paragraphs(Main.number);

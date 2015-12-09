@@ -1,284 +1,301 @@
 
-body {
-	font-family: 'Merriweather', serif;
+body
+{
+    font-family: 'Merriweather', serif;
 }
 
-a {
-	color: #fff;
+a
+{
+    color: #fff;
 }
 
-a:hover{
-	text-decoration: none;
-	color: #ddd;
+a:hover
+{
+    text-decoration: none;
+
+    color: #ddd;
 }
 
-.michel-temer {
-	width: 100%;
-	height: 300px;
-	float: left;
-	background: url(../img/temer.jpg) no-repeat;
-	background-size: 50%;
-	background-position: center;
-	text-align: center;
-	margin-bottom: 20px;
+.michel-temer
+{
+    float: left;
+
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+
+    text-align: center;
+
+    background: url(../img/temer.jpg) no-repeat;
+    background-position: center;
+    background-size: 60%;
 }
 
-.michel-temer .phrases{
-	width: 600px;
-	color: #fff;
-	margin: 0 auto;
-	padding-top: 50px;
-	font-size: 2em;
+.michel-temer .phrases
+{
+    font-size: 2em;
+
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 50px;
+
+    color: #fff;
 }
 
-@media screen and (max-width: 1024px) {
- 	.michel-temer {
- 		background-size: cover;
- 	}
- 	.michel-temer .phrases {
- 		width: 300px;
- 		font-size: 1.5em;
- 	}
+.paragraphs
+{
+    overflow: auto;
 
- 	.container{
- 		width: auto;
- 	}
+    height: 600px;
 }
 
-.container { 
-	width: 600px;
-	margin: 0 auto;
+@media screen and (max-width: 1024px)
+{
+    .michel-temer
+    {
+        background-size: cover;
+    }
+    .michel-temer .phrases
+    {
+        font-size: 1.5em;
+
+        width: 300px;
+    }
+
+    .container
+    {
+        width: auto;
+    }
 }
 
-footer a {
-	color: #000;
+.container
+{
+    width: 900px;
+    margin: 0 auto;
 }
 
-.tools{
-	padding-bottom: 20px;
-	margin-bottom: 20px;
-	border-bottom: 1px dotted #ddd;
+footer a
+{
+    color: #000;
 }
 
-.tools h1 {
-	font-weight: 700;
+.tools
+{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
-.tools h1 small{
-	font-weight: 300;
+.tools h1
+{
+    font-weight: 700;
 }
 
-.tools .choose{
-	padding-top: 10px;
+.tools h1 small
+{
+    font-weight: 300;
+}
+
+.tools .choose
+{
+    padding-top: 10px;
+}
+
+.tools .choose li
+{
+    padding: 5px;
 }
 
 
-
-/* ----------- iPhone 4 and 4S ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url('./ajax-loader.gif') center center no-repeat;
 }
 
-/* Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
+/* Icons */
+
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    padding: 0;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
 }
 
-/* Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
 
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-/* ----------- iPhone 5 and 5S ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
+.slick-prev
+{
+    left: -25px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+.slick-prev:before
+{
+    content: 'â†';
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: 'â†’';
 }
 
-/* Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
+.slick-next
+{
+    right: -25px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+.slick-next:before
+{
+    content: 'â†’';
+}
+[dir='rtl'] .slick-next:before
+{
+    content: 'â†';
 }
 
-/* Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-
+/* Dots */
+.slick-slider
+{
+    margin-bottom: 30px;
 }
 
-/* ----------- iPhone 6 ----------- */
+.slick-dots
+{
+    position: absolute;
+    bottom: -45px;
 
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
+    display: block;
 
+    width: 100%;
+    padding: 0;
+
+    list-style: none;
+
+    text-align: center;
 }
+.slick-dots li
+{
+    position: relative;
 
-/* Portrait */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) { 
+    display: inline-block;
 
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
 }
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
 
-/* Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) { 
+    display: block;
 
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
 }
-
-/* ----------- iPhone 6+ ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
 }
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
 }
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
 
-/* Landscape */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
+    position: absolute;
+    top: 0;
+    left: 0;
 
+    width: 20px;
+    height: 20px;
+
+    content: 'â€¢';
+    text-align: center;
+
+    opacity: .25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
-
-/* ----------- Galaxy S3 ----------- */
-
-/* Portrait and Landscape */
-@media screen 
-  and (device-width: 320px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 2) {
-
-}
-
-/* Portrait */
-@media screen 
-  and (device-width: 320px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 2) 
-  and (orientation: portrait) {
-
-}
-
-/* Landscape */
-@media screen 
-  and (device-width: 320px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 2) 
-  and (orientation: landscape) {
-
-}
-
-/* ----------- Galaxy S4 ----------- */
-
-/* Portrait and Landscape */
-@media screen 
-  and (device-width: 320px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) {
-
-}
-
-/* Portrait */
-@media screen 
-  and (device-width: 320px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) 
-  and (orientation: portrait) {
-
-}
-
-/* Landscape */
-@media screen 
-  and (device-width: 320px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) 
-  and (orientation: landscape) {
-
-}
-
-/* ----------- Galaxy S5 ----------- */
-
-/* Portrait and Landscape */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) {
-
-}
-
-/* Portrait */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) 
-  and (orientation: portrait) {
-
-}
-
-/* Landscape */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) 
-  and (orientation: landscape) {
-
-}
-
-/* ----------- Non-Retina Screens ----------- */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-}
-
-/* ----------- Retina Screens ----------- */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) { 
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: black;
 }
