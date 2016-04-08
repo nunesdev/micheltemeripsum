@@ -6,29 +6,26 @@ body
 
 a
 {
-    color: #fff;
+    color: #000;
 }
 
 a:hover
 {
     text-decoration: none;
-
     color: #ddd;
 }
 
 .michel-temer
 {
     float: left;
-
     width: 100%;
     height: 300px;
     margin-bottom: 20px;
-
     text-align: center;
-
     background: url(../img/temer.jpg) no-repeat;
-    background-position: center;
-    background-size: 60%;
+    background-size: 75%;
+    background-attachment: fixed;
+    background-position: center 80%;
 }
 
 .michel-temer .phrases
@@ -61,17 +58,12 @@ a:hover
 
         width: 300px;
     }
-
-    .container
-    {
-        width: auto;
-    }
 }
 
 .container
 {
-    width: 900px;
     margin: 0 auto;
+    clear: both;
 }
 
 footer a
